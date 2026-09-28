@@ -1,0 +1,88 @@
+#app-container {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto;
+    background-color: var(--bg-main);
+    padding: 0 10px;
+}
+#app-container h1 {
+    font-size: 28px;
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+#converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 32px;
+    border-radius: 12px;
+    background-color: var(--bg-card);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+#converter input, #converter select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    color: var(--text-main);
+    border-radius: 8px;
+    background-color: var(--bg-card);
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+#converter label {
+    align-self: flex-start;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bg-main);
+    margin-bottom: -4px;
+}
+#converter input:focus, #converter select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(22, 83, 83, 0.2);
+}
+#converter button {
+    background-color: var(--primary-color);
+    padding: 10px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+}
+#converter button:hover {
+    transform: scale(1.02);
+    opacity: 0.95;
+}
+#converter button:active {
+    transform: scale(0.98);
+}
+#converter button:disabled {
+    background-color: #a4b2b2;
+    cursor: not-allowed;
+}
+#result {
+    font-size: 20px;
+    border: none;
+    margin-top: 20px;
+    padding: 20px;
+}
+#result.has-result {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--bg-card);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0, 4px 12px, rgba(0, 0, 0, 0.03);
+    border-radius: 15px;
+    color: var(--text-main);
+}
