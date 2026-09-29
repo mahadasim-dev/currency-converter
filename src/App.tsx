@@ -20,7 +20,6 @@ export default function App() {
         if (response.ok) {
           const data: ExchangeRateData = await response.json();
           const codes = Object.keys(data.rates);
-          console.log(data, 'Error:', codes);
           setCurrencyList(codes);
         }
       }
