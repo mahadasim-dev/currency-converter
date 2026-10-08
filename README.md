@@ -1,6 +1,6 @@
 # Currency Converter (React + TypeScript)
 
-* **Application Interface:** [Click to Test the Demo](https://github.io)
+* **Application Interface:** [Click to Test the Demo](https://mahadasim-dev.github.io/currency-converter/)
 
 ### What it does
 A conversion calculator app that tracks live exchange rates across 150+ real-world currencies.
